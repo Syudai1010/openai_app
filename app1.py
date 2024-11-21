@@ -26,7 +26,7 @@ if st.button("送信"):
                 ]
 
                 # OpenAI APIへのリクエスト（新しいインターフェースを使用）
-                response = openai.Chat.create(
+                response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo",
                     messages=messages
                 )
